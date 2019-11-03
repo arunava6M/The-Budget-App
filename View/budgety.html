@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            CallBack functions
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/CSS" href="../Stylesheet/budgety.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+
+     
+    </head>
+    <body>
+        <div class="Top">
+            <div class="image">
+            <div class= "box1">
+                <div class="title">
+                    Available Budget in <span class="month">September</span>
+                </div>
+                <div class="avlBudget">+2,451.00</div>
+                <div class="box11" id="incomeBox">
+                    <div class="boxTitle" >INCOME</div>
+                    <div class="boxValue boxValueIncome">+4,234.00</div> 
+                    
+                </div>
+                <div class="box11" id="expenseBox">
+                        <div class="boxTitle">EXPENSE</div>
+                        <div class="boxValue boxValueExpense">-2,234.00</div> 
+                        <div class="boxPercentage">50%</div> 
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="Bottom">
+            <div class="add_container">
+                <select class="add_container_choose">
+                    <option class="plus" value="inc" selected><i>+</i></option>
+                    <option class="minus" value="exp">-</option>
+                </select>
+                
+                   <input type="text"  class="add_container_description" placeholder="Description" />
+                
+                <input type="number" class="add_container_value" placeholder="Amount"/>
+                <button class="material-icons md-48 check_circl">check_circle</button>
+            </div>
+            <div class="details">
+                <div class="income">
+                    <h2 class="income_head">INCOME</h2>
+                    <div class="income_list">
+                       <!-- <div class="item " id="income-0">
+                            <div class="item__description">Salary</div>
+                            <div class="right ">
+                                <div class="item__value">+ 2,100.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete">
+                                        <i class="material-icons clear">clear</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item " id="income-1">
+                            <div class="item__description">Sold car</div>
+                            <div class="right ">
+                                <div class="item__value">+ 1,500.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete">
+                                        <i class="material-icons clear">clear</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="expense">
+                    <h2 class="expense_head">EXPENSE</h2>
+                    <div class="expense_list">
+                        <!--<div class="item expense_bg" id="expense-0">
+                            <div class="item__description">Salary</div>
+                            <div class="right ">
+                                <div class="item__value">+ 2,100.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete">
+                                        <i class="material-icons clear">clear</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item " id="expense-1">
+                            <div class="item__description">Sold car</div>
+                            <div class="right ">
+                                <div class="item__value">+ 1,500.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete">
+                                        <i class="material-icons clear">clear</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--<script src="budget.js"></script>-->
+        <script src="../JS/budget.js"></script>
+    </body>
+</html>
