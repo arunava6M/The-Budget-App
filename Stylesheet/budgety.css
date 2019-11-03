@@ -1,20 +1,10 @@
 
 .Top{
     text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 40%;
-    background-color: #5061af;
-    top:0;
-    left:0;
-    right:0;
-}
-.image{
-    
     position: relative;
-    /*background-image: url("bg.jpg") ;*/
-    height: 100%;
-    
+    height: 300px;
+    width: 100vw;
+    background-color: #5061af;
 }
 
 .box1{
@@ -82,14 +72,12 @@
 
 
 .Bottom{
-    position:absolute;
+    position:relative;
     text-align: center;
-    width: 100%;
-    height:60%;
+    width: 100vw;
+    height:100vh;
     background-color: rgb(240, 235, 231);
-    bottom: 0px;
-    left:0;
-    right:0;
+    
     box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
@@ -103,8 +91,9 @@
     
 }
 .add_container_choose{
-    text-align: left;
+    
     color: rgb(179, 168, 168);
+    right: 0;
     font-size: 25px;
     height: 45px;
     width: 45px;
@@ -119,7 +108,7 @@
 
 .add_container_description{
     border-style: solid;
-    text-align: left;
+    
     padding: 15px;
     color: rgb(179, 168, 168);
     height: 45px;
@@ -168,44 +157,47 @@
     color: grey;
 }
 .details{
-    position: absolute;
-    top:100px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top:150px;
 }
 .income{
     font-family: 'Quicksand', sans-serif;
-    position:absolute;
+    
     color:rgb(17, 87, 17);
-    left:200px;
+    
 }
 .expense{
     font-family: 'Quicksand', sans-serif;
-    position:absolute;
+    
     color:rgb(150, 22, 22);
     
-    left:700px
+    
 }
 .expense_head{
-    position: absolute;
-    float:left;
+    
+    
 }
 .expense_list{
-    position: absolute;
+    
     top:50px;
     
 }
 
 .income_head{
+    top: 0;
     
-    position: absolute;
-    float: left;
 }
 .income_list{
-    position: absolute;
+    text-align: center;
+    
     top:50px;
 
 
 }
 .item{
+    display: inline-block;
     font-family: 'Quicksand', sans-serif; 
     margin-top: 1px;
     position : relative;

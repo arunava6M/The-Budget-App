@@ -1,19 +1,23 @@
 <html>
     <head>
         <title>
-            CallBack functions
+            The Budget App
         </title>
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/CSS" href="../Stylesheet/budgety.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>      
 
      
     </head>
     <body>
+        <div class="container" style="margin: 0; padding: 0;">
+        
         <div class="Top">
-            <div class="image">
+            
             <div class= "box1">
                 <div class="title">
                     Available Budget in <span class="month">September</span>
@@ -30,80 +34,98 @@
                         <div class="boxPercentage">50%</div> 
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="Bottom">
-            <div class="add_container">
-                <select class="add_container_choose">
-                    <option class="plus" value="inc" selected><i>+</i></option>
-                    <option class="minus" value="exp">-</option>
-                </select>
-                
-                   <input type="text"  class="add_container_description" placeholder="Description" />
-                
-                <input type="number" class="add_container_value" placeholder="Amount"/>
-                <button class="material-icons md-48 check_circl">check_circle</button>
-            </div>
-            <div class="details">
-                <div class="income">
-                    <h2 class="income_head">INCOME</h2>
-                    <div class="income_list">
-                       <!-- <div class="item " id="income-0">
-                            <div class="item__description">Salary</div>
-                            <div class="right ">
-                                <div class="item__value">+ 2,100.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete">
-                                        <i class="material-icons clear">clear</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item " id="income-1">
-                            <div class="item__description">Sold car</div>
-                            <div class="right ">
-                                <div class="item__value">+ 1,500.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete">
-                                        <i class="material-icons clear">clear</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-                <div class="expense">
-                    <h2 class="expense_head">EXPENSE</h2>
-                    <div class="expense_list">
-                        <!--<div class="item expense_bg" id="expense-0">
-                            <div class="item__description">Salary</div>
-                            <div class="right ">
-                                <div class="item__value">+ 2,100.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete">
-                                        <i class="material-icons clear">clear</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item " id="expense-1">
-                            <div class="item__description">Sold car</div>
-                            <div class="right ">
-                                <div class="item__value">+ 1,500.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete">
-                                        <i class="material-icons clear">clear</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
             
         </div>
+        <div class="Bottom">
+            
+                <div class="add_container">
+                    <div class="row">
+                        <div class="col-md-1 col-md-offset-3">
+                        <select class="add_container_choose">
+                            <option class="plus" value="inc" selected><i>+</i></option>
+                            <option class="minus" value="exp">-</option>
+                        </select>
+                        </div>
+                        <div class="col-md-2">
+                        <input type="text"  class="add_container_description" placeholder="Description" />
+                        </div>
+                        <div class="col-md-4">
+                        <input type="number" class="add_container_value" placeholder="Amount"/>
+                        <button class="material-icons md-48 check_circl">check_circle</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="details">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="income">
+                            <h2 class="income_head">INCOME</h2>
+                            <div class="income_list">
+                            <!-- <div class="item " id="income-0">
+                                    <div class="item__description">Salary</div>
+                                    <div class="right ">
+                                        <div class="item__value">+ 2,100.00</div>
+                                        <div class="item__delete">
+                                            <button class="item__delete">
+                                                <i class="material-icons clear">clear</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item " id="income-1">
+                                    <div class="item__description">Sold car</div>
+                                    <div class="right ">
+                                        <div class="item__value">+ 1,500.00</div>
+                                        <div class="item__delete">
+                                            <button class="item__delete">
+                                                <i class="material-icons clear">clear</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expense">
+                            <h2 class="expense_head">EXPENSE</h2>
+                            <div class="expense_list">
+                                <!--<div class="item expense_bg" id="expense-0">
+                                    <div class="item__description">Salary</div>
+                                    <div class="right ">
+                                        <div class="item__value">+ 2,100.00</div>
+                                        <div class="item__delete">
+                                            <button class="item__delete">
+                                                <i class="material-icons clear">clear</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item " id="expense-1">
+                                    <div class="item__description">Sold car</div>
+                                    <div class="right ">
+                                        <div class="item__value">+ 1,500.00</div>
+                                        <div class="item__delete">
+                                            <button class="item__delete">
+                                                <i class="material-icons clear">clear</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+            
+        </div>
+    </div>
+    
         <!--<script src="budget.js"></script>-->
         <script src="../JS/budget.js"></script>
     </body>
